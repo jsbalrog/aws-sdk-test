@@ -1,6 +1,6 @@
 var AWS = require('aws-sdk');
 
-// AWS.config.region = 'us-west-1'; // Don't need if it's the default 'us standard'
+AWS.config.region = 'us-east-1'; // Don't need if it's the default 'us standard'
 var s3 = new AWS.S3();
 
 s3.listBuckets(function(err, data) {
